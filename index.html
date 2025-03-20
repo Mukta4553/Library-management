@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>University Library</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            background-color: #2f2fa2;
+            color: white;
+            padding: 8px 20px;
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .navbar {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .navbar .logo img {
+            height: 50px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+        }
+
+        .hero-img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        }
+
+        .hero-text {
+            position: static;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .search-section {
+            background: rgba(50, 50, 200, 0.8);
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .search-btn {
+            background: #1a73e8;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .search-btn:hover {
+            background: #155ab6;
+        }
+
+        .hours {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .live-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #1a73e8;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-bar">
+        📧 daffodiluniversity@diu.edu.bd
+    </header>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Daffodil International University Library Logo" />
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About ▾</a></li>
+            <li><a href="#">Resource ▾</a></li>
+            <li><a href="#">Services ▾</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="library.jpg" alt="Library Image" class="hero-img"/>
+        <div class="hero-text">Daffodil International University Library</div>
+    </section>
+    <section class="search-section">
+        <button class="search-btn">Site Search</button>
+        <div class="hours">
+            <p>Library is Open</p>
+            <p>Sat to Thurs: 8.00 AM to 5.30 PM</p>
+            <p>Friday: 8.30 AM to 4.00 PM</p>
+        </div>
+    </section>
+
+    <div class="live-chat">Live Chat</div>
+</body>
+</html>
